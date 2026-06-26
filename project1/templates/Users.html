@@ -1,0 +1,29 @@
+{% extends 'Home.html' %}
+
+{% block content %}
+
+
+<section class="cards_section">
+    <div class="users_section_inner">
+{% for i in Users %}
+    <div class="card" style="width: 18rem;">
+        <img src="{{ i.profile_pic.url }}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{ i.username }}</h5>
+            <h6 class="card-title">{{ i.user_number }}</h6>
+            <h6 class="card-title">{{ i.user_date }}</h6>
+
+            <a href="{% url 'update_user' i.id %}" class="btn btn-primary">Edit</a>
+            <a href="{% url 'delete_user' i.id %}" class="btn btn-primary">Delete</a>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+</section>
+
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,47 @@
+.Userform{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 5px 5px 20px rgba(29, 29, 29, 0.342);
+    background-color: rgba(240, 248, 255, 0.515);
+}
+
+.Userform input{
+    width: 80%;
+    padding: 10px 5px 10px 20px;
+    border: none;
+}
+.Userform input:focus{
+    border-radius: 5px;
+    outline: 1px solid rgb(70, 65, 65);
+}
+
+.userform_browse{
+    width: 50%;
+    background-color: rgba(240, 248, 255, 0.515);
+}
+
+.Userform button{
+    width: 80%;
+    height: 45px;
+    color: rgb(94, 55, 5);
+    outline: 1px solid rgb(70, 65, 65);
+    background-color: rgba(240, 248, 255, 0.515);
+}
+
+.Userform button:hover{
+    background-color: rgb(196, 128, 39);
+}
+
+.userform_section{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}

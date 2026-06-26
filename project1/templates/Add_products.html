@@ -1,0 +1,17 @@
+{% extends 'Home.html' %}
+{% block content %}
+
+<section class="userform_section">
+        <form class="Userform" method="post" enctype="multipart/form-data">
+        <!-- cross site request forgery -->
+        {% csrf_token %} 
+        <input type="text" name="username" placeholder="Enter your name" required>
+        <input type="tel" name="user_number" placeholder="Enter your phone number" required>
+        <input type="date" name="user_date" placeholder="Enter your date of birth" required>
+        <input type="file" class="userform_browse" placeholder="select profile picture" name="profile_pic">
+        <!-- <input type="submit" > -->
+         <button type="submit">Register</button>
+    </form>
+</section>
+    
+{% endblock %}
